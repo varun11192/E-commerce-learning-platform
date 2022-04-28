@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "119483297301",
+    "project_id": "guru-ghantal-69c63",
+    "storage_bucket": "guru-ghantal-69c63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119483297301:android:54437cc4aacce49c00a81c",
+        "android_client_info": {
+          "package_name": "com.varunsen.gurughantal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119483297301-tbokjhlgu0p3oh536vh7c66nvbhju8tb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsWAwEoXmrwYaaMyfwTIKK0ecIdNhMCPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119483297301-tbokjhlgu0p3oh536vh7c66nvbhju8tb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

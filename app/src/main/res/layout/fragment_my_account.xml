@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.MyAccountFragment"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMyAccount"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="@color/primary"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/user_account_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="6dp"
+        android:src="@drawable/user_account_pic"
+        app:layout_constraintLeft_toLeftOf="@id/linearLayoutMyAccount"
+        app:layout_constraintTop_toTopOf="@id/linearLayoutMyAccount"
+        app:layout_constraintRight_toRightOf="@id/linearLayoutMyAccount"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayoutMyAccount"
+        />
+
+    <LinearLayout
+        android:id="@+id/infoLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@drawable/slider_background"
+        android:elevation="6dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_account_image"
+        >
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="Varun Sen"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:text="1234567890"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="abc.oye@gmail.com"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settingsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:tint="@color/grey"
+        android:src="@drawable/settings_icon"
+        app:layout_constraintLeft_toRightOf="@id/infoLinearLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/infoLinearLayout"
+        app:layout_constraintBottom_toBottomOf="@id/infoLinearLayout"
+        />
+
+    <Button
+        android:id="@+id/log_out_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_button_layout"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Log  Out"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="3dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/infoLinearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Guru Ghantal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawerOpen">Open</string>
+    <string name="drawerClose">Close</string>
+    <string name="register"><u><b><i>Skip this for now</i></b></u></string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home_icon_image"/>
+
+    <item
+        android:id="@+id/itemTitle"
+        android:title="Purchased Products"
+        >
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_myCourses"
+                android:title="My Courses"
+                android:icon="@drawable/my_courses_icon_image"/>
+
+            <item
+                android:id="@+id/nav_myNotes"
+                android:title="My Notes"
+                android:icon="@drawable/notes_icon_image"/>
+
+            <item
+                android:id="@+id/nav_myTests"
+                android:title="My Tests"
+                android:icon="@drawable/test_icon_image"/>
+
+            <item
+                android:id="@+id/nav_myAccount"
+                android:title="My Account"
+                android:icon="@drawable/account_icon_image"/>
+
+            <item
+                android:id="@+id/nav_notifications"
+                android:title="Notifications"
+                android:icon="@drawable/notification_icon_image"/>
+
+        </menu>
+
+
+    </item>
+
+    <group android:id="@+id/navgroup">
+
+        <item
+            android:id="@+id/nav_shareIcon"
+            android:title="Share This App"
+            android:icon="@drawable/share_icon_image"/>
+
+        <item
+            android:id="@+id/nav_instagram"
+            android:title="Instagram"
+            android:icon="@drawable/instalogo"/>
+
+        <item
+            android:id="@+id/nav_youtube"
+            android:title="YouTube"
+            android:icon="@drawable/youtube_icon_image"/>
+
+        <item
+            android:id="@+id/nav_telegram"
+            android:title="Telegram"
+            android:icon="@drawable/telegram_icon_image"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:title="About Us"
+            android:icon="@drawable/info_icon_image"/>
+
+    </group>
+
+
+
+    <item
+        android:id="@+id/nav_logOut"
+        android:title="Log Out"
+        android:icon="@drawable/sign_out_icon_image"/>
+
+
+</menu>

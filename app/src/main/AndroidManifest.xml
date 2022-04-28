@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.varunsen.gurughantal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    //open the fragment
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gglogotrial"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/gglogotrial"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GuruGhantal">
+        <activity android:name=".activities.LectureDisplayActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+
+        <activity
+            android:name=".activities.CourseMaterialActivity"
+            android:theme="@style/NoActionBarTheme" />
+        <activity android:name=".activities.TestSetsActivity" />
+        <activity android:name=".activities.NotesDisplayActivity" />
+        <activity android:name=".activities.CourseSubjectsActivity" />
+        <activity android:name=".activities.UpdateUserInfoActivity" />
+        <activity android:name=".activities.DeliveryActivity" />
+        <activity android:name=".activities.CategoriesActivity" />
+        <activity android:name=".activities.ProductDetailsActivity" />
+        <activity android:name=".activities.ViewAllActivity" />
+        <activity
+            android:name=".activities.AuthenticationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionBarTheme" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <service
+            android:name=".classes.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
